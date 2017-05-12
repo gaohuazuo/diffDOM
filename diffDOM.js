@@ -10,7 +10,7 @@
         define(factory);
     } else {
         // `window` in the browser, or `exports` on the server
-        root.diffDOM = diffDOM;
+        root.diffDOM = factory();
     }
 })(function() {
     "use strict";
