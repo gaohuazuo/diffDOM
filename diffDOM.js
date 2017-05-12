@@ -8,9 +8,9 @@
     } else if (typeof define === 'function') {
         // AMD loader
         define(factory);
-    else {
+    } else {
         // `window` in the browser, or `exports` on the server
-        this.diffDOM = diffDOM;
+        root.diffDOM = diffDOM;
     }
 })(function() {
     "use strict";
